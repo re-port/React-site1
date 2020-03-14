@@ -24,7 +24,7 @@ class Header extends Component {
             /> React site
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsiv-navbar-nav" />
-          <Navbar.Collapse>
+          <Navbar.Collapse id="responsiv-navbar-nav">
             <Nav className="mr-auto">
                <Nav.Link href="/"> Home </Nav.Link>
                <Nav.Link href="/about"> About us </Nav.Link>
@@ -43,7 +43,7 @@ class Header extends Component {
         </Container>
       </Navbar>
      </>
-    )
+   );
   }
 }
 
