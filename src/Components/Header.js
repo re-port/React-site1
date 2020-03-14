@@ -1,8 +1,14 @@
 import React, {Component} from 'react'
-import {Navbar, Nav, FormControl, Container, Form, Button} from 'react-bootstrap'
+import {
+  Navbar,
+  Nav,
+  FormControl,
+  Container,
+  Form,
+  Button } from 'react-bootstrap'
 import logo from './logo192.png'
 
-export default class Header extends Components {
+class Header extends Component {
   render(){
     return (
      <>
@@ -40,3 +46,5 @@ export default class Header extends Components {
     )
   }
 }
+
+export default Header;
