@@ -15,7 +15,7 @@ import About from '../Pages/About';
 import Contacts from '../Pages/Contacts';
 import Blog from '../Pages/Blog';
 
-class Header extends Component {
+export default class Header extends Component {
   render() {
     return (
      <>
@@ -62,5 +62,3 @@ class Header extends Component {
    );
   }
 }
-
-export default Header;
