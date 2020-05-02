@@ -5,11 +5,18 @@ import {
   FormControl,
   Container,
   Form,
-  Button } from 'react-bootstrap'
-import logo from './logo192.png'
+  Button
+} from 'react-bootstrap'
+import logo from './logo192.png';
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+
+import Home from '../Pages/Home';
+import About from '../Pages/About';
+import Contacts from '../Pages/Contacts';
+import Blog from '../Pages/Blog';
 
 class Header extends Component {
-  render(){
+  render() {
     return (
      <>
       <Navbar fixed="top" collapseOnSelect expend="md" bg="dark" variant="dark">
@@ -42,6 +49,15 @@ class Header extends Component {
           </Navbar.Collapse>
         </Container>
       </Navbar>
+
+      <Router>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/contacts" component={Contacts} />
+          <Route exact path="/blog" component={Blog} />
+        </Switch>
+      </Router>
      </>
    );
   }
